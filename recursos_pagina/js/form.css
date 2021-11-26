@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto;
+}
+
+.contenedor-form {
+    background: rgba(70, 65, 65, 0.521);
+    max-width: 400px;
+    width: 100%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 20px;
+}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #f3f3f3;
+    border-bottom: 2px solid #fffcf9;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid #130c0c6c;
+    border-bottom: 2px solid #000000fa;
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"],
+.contenedor-form input[type="telefono"],
+.contenedor-form input[type="correo"],
+.contenedor-form input[type="ubicacion"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(266,0,0,.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #0000008f;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+
+
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus,
+.contenedor-form input[type="telefono"]:focus,
+.contenedor-form input[type="correo"]:focus,
+.contenedor-form input[type="ubicacion"]:focus {
+    border-bottom: 4px solid #ffffff6b;
+}
+
+.contenedor-form input[type="submit"] {
+    background: rgba(238, 9, 9, 0.377);
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgba(17, 2, 2, 0.315);
+}
+
+.contenedor-form .reset-password {
+    background: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contenedor-form .reset-password a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 50px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
